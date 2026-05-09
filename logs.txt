@@ -1,0 +1,2 @@
+2026-05-07 21:54:52,834 - ERROR - Nombre vacío
+2026-05-07 21:54:52,835 - ERROR - Cantidad inválida

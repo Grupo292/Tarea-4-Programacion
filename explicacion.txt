@@ -1,0 +1,19 @@
+# Explicación de la actividad
+
+## Herencia
+Las clases:
+- ReservaSala
+- AlquilerEquipo
+- Asesoria
+
+heredan de la clase abstracta Servicio.
+
+## Polimorfismo
+Cada clase implementa el método calcular_costo()
+de manera diferente dependiendo del servicio.
+
+## Clase Abstracta
+La clase Servicio es abstracta porque contiene el método abstracto:
+@abstractmethod
+def calcular_costo(self, cantidad):
+    pass

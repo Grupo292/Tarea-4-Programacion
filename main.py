@@ -151,7 +151,81 @@ except Exception as e:
     print("Error:", e)
 
     guardar_log(e)
+# --------------------------------------------------
+# OPERACION 7
+# CANCELAR RESERVA
+# --------------------------------------------------
 
+try:
+
+    cliente6 = Cliente("Pedro", "88888")
+
+    servicio4 = ReservaSala("Sala Empresarial", 70000)
+
+    reserva4 = Reserva(cliente6, servicio4, 2)
+
+    reserva4.cancelar()
+
+    print(reserva4.mostrar_reserva())
+
+except Exception as e:
+
+    print("Error:", e)
+
+    guardar_log(e)
+    
+# --------------------------------------------------
+# OPERACION 8
+# DOCUMENTO VACIO
+# --------------------------------------------------
+
+try:
+
+    cliente7 = Cliente("Laura", "")
+
+except Exception as e:
+
+    print("Error:", e)
+
+    guardar_log(e)
+    
+# --------------------------------------------------
+# OPERACION 9
+# RESERVA VALIDA
+# --------------------------------------------------
+
+try:
+
+    cliente8 = Cliente("Sofia", "11111")
+
+    servicio5 = Asesoria("Asesoria Redes", 120000)
+
+    reserva5 = Reserva(cliente8, servicio5, 4)
+
+    reserva5.confirmar()
+
+    print(reserva5.mostrar_reserva())
+
+except Exception as e:
+
+    print("Error:", e)
+
+    guardar_log(e)
+    
+# --------------------------------------------------
+# OPERACION 10
+# DURACION EN CERO
+# --------------------------------------------------
+
+try:
+
+    reserva6 = Reserva(cliente8, servicio5, 0)
+
+except Exception as e:
+
+    print("Error:", e)
+
+    guardar_log(e)
 
 # MENSAJE FINAL DEL SISTEMA
 

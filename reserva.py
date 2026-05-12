@@ -23,5 +23,6 @@ class Reserva:
         return (
             f"Cliente: {self.cliente.get_nombre()}\n"
             f"Servicio: {self.servicio.nombre}\n"
+            f"Duracion: {self.duracion}\n"
             f"Estado: {self.estado}"
         )
